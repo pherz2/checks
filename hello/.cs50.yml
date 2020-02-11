@@ -1,0 +1,12 @@
+check50:
+  checks:
+    Hello Margaret:
+      - run: python3 hello.py # run python3 hello.py
+        stdin: Margaret # insert Margaret into stdin
+        stdout: Hello Margaret # expect Hello, Margaret in stdout
+        exit: 0 # expect program to exit with exitcode 0
+    Hello Brian:
+      - run: python3 hello.py # run python3 hello.py
+        stdin: Brian # insert Brian into stdin
+        stdout: Hello Brian # expect Hello Brian in stdout
+        exit: 0 # expect program to exit with exitcode 0
